@@ -1,7 +1,7 @@
 import { LogginService } from "./logging.service";
 import { Injectable, EventEmitter } from "@angular/core";
 
-@Injectable()
+@Injectable({providedIn: 'root'})
 export class AccountsService {
 
   accounts = [
